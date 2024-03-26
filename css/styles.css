@@ -40,3 +40,21 @@ h2{
     text-align: left;
     font-size: medium;
 }
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    gap: 20px;
+}
+.content img{
+    width: auto;
+}
+.name{
+    font-size: 60px;
+}
+.about-boss{
+    font-size: 40px;
+}
