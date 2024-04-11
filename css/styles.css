@@ -17,6 +17,11 @@ body {
   font-family: "monserrat", sans-serif;
   background-color: #e6e6e6;
 }
+.body-bg{
+  height: 100vh;
+  background-image: url(../images/M_broker_520x466_30lat.png);
+  background-repeat: repeat;
+}
 img {
   display: block;
 }
