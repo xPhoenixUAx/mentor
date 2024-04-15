@@ -4,6 +4,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  position: sticky;
+  z-index: 999;
+  border: 1px solid;
+  width: 1360px;
+  height: 100px;
 }
 .company {
   margin-right: 250px;
@@ -17,11 +22,15 @@ body {
   font-family: "monserrat", sans-serif;
   background-color: #e6e6e6;
 }
+/*
 .body-bg{
   height: 100vh;
   background-image: url(../images/M_broker_520x466_30lat.png);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+*/
 img {
   display: block;
 }
@@ -42,14 +51,20 @@ ul {
 .footer {
   background-color: #1d2c57;
   font-style: normal;
+  border: 1px solid;
 }
 .logo-img-footer {
-  background-color: #fff;
+  display: flex;
+  background-color: #e6e6e6;
+  justify-content: last baseline;
+  
 }
+/*
 .container.footer {
   display: flex;
   justify-content: space-between;
 }
+*/
 .contacts-link:active {
   color: #979797;
 }
@@ -59,7 +74,8 @@ ul {
   font-style: italic;
 }
 .logo-img {
-  background-color: #ffff;
+  background-color: #e6e6e6;
+  margin: 0;
 }
 p {
   text-align: center;
@@ -134,6 +150,10 @@ h2 {
 }
 .container.what {
   display: flex;
+  transition: transform 250ms ease-in-out;
+}
+.container.what:hover{
+  transform: scale(1.1);
 }
 .what-text-colisions {
   width: 650px;
